@@ -10,7 +10,7 @@ PORT = "9090"
 telnetObj = telnetlib.Telnet(HOST,PORT)
 
 def read_tibbo():
-    peso = telnetObj.read_until(b"K")
+    peso = telnetObj.read_until(b"\n")
     time.sleep(0.1)
     #telnetObj.write(b"exit\n")
     print(peso)

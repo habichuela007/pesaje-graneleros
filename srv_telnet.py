@@ -14,7 +14,7 @@ conn, addr = s.accept()
 print ('Connection address:', addr)
 while 1:
     #data = conn.recv(BUFFER_SIZE)
-    data = b"chucha"
+    data = b"character_/n"
     if not data: break
     print ("received data:", data)
     conn.send(data)  # echo
